@@ -1,0 +1,73 @@
+body {
+	width: 1440px;
+	margin: 0px;
+	font-family: "Roboto", sans-serif;
+}
+
+header {
+	margin-bottom: 424px;
+	.header__logo {
+		float: left;
+		margin-top: 49px;
+		margin-left: 21px;
+	}
+
+	.main-navigation {
+		float: left;
+		margin-top: 65px;
+    margin-left: 159px;
+
+		ul {
+			margin-top: 10px;
+			li {
+				display: inline-block;
+				margin-right: 43px;
+
+				a {
+					color: black;
+					font-size: 16px;
+					font-weight: 500;
+					line-height: 30px;
+					text-transform: uppercase;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.user-block {
+		float: right;
+		margin-top: 75px;
+		margin-right: 20px;
+		a {
+			color: black;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 30px;
+			text-transform: uppercase;
+			text-decoration: none;
+			background: url(../img/cart-icon.png) no-repeat 1px 3px;
+			padding-left: 42px;
+		}
+	}
+}
+
+main {
+	.main__advantages {
+		.advantages__item {
+			float: left;
+			width: 300px;
+		}
+	}
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
