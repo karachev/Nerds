@@ -327,16 +327,19 @@ main {
 
 	.main__right {
 		float: right;
+		width: 800px;
 
 		.main__right_sort {
 			margin-top: 15px;
 			margin-right: 21px;
+			margin-bottom: 55px;
 			h2 {
 				color: black;
 				display: inline;
 				font-size: 18px;
 				font-weight: 700;
-				line-height: 18px
+				line-height: 18px;
+				margin-left: 18px;
 			}
 
 			ul {
@@ -376,7 +379,23 @@ main {
 					background: url(../img/sort-up.png);
 				}
 			}
+		}
 
+		.main__right_resutl-sort {
+			margin-left: 20px;
+
+			.sort__item {
+				margin-bottom: 32px;
+			}
+
+			.sort__item:nth-child(2n + 1) {
+				float: left;
+			}
+
+			.sort__item:nth-child(2n) {
+				float: right;
+				margin-right: 19px;
+			}
 		}
 	}
 
