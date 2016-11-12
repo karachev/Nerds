@@ -52,6 +52,7 @@ header {
 		}
 	}
 
+	/*catalog.html*/
 	h1 {
 		clear: both;
 		color: black;
@@ -64,12 +65,14 @@ header {
 	}
 }
 
+/*catalog.html*/
 .header-catalog {
 	margin-bottom: 43px;
 	background-color: #eee;
 }
 
 main {
+	/*index.html*/
 	.main__advantages {
 		margin-left: 20px;
 		padding-bottom: 80px;
@@ -264,6 +267,7 @@ main {
 		}
 
 		.main-contacts__feedback {
+			clear: both;
 			position: absolute;
 			top: 46px;
 			left: 140px;
@@ -313,6 +317,71 @@ main {
 				margin-bottom: 46px;
 			}
 		}
+	}
+
+	/*catalog.html*/
+	.main__left {
+		float: left;
+		width: 300px;
+	}
+
+	.main__right {
+		float: right;
+
+		.main__right_sort {
+			margin-top: 15px;
+			margin-right: 21px;
+			h2 {
+				color: black;
+				display: inline;
+				font-size: 18px;
+				font-weight: 700;
+				line-height: 18px
+			}
+
+			ul {
+				display: inline;
+				padding-left: 264px;
+				padding-right: 7px;
+				li {
+					display: inline-block;
+					list-style-type: none;
+					padding-right: 22px;
+					a {
+						opacity: 0.3;
+						color: black;
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 18px;
+						text-transform: uppercase;
+						text-decoration: none;
+					}
+				}
+			}
+
+			.ask-desk-icons {
+				display: inline;
+				a {
+					display: inline-block;
+					width: 9px;
+					height: 9px;
+					margin-left: 16px;
+				}
+
+				.icon-up-dir {
+					background: url(../img/sort-down.png);
+				}
+
+				.icon-down-dir {
+					background: url(../img/sort-up.png);
+				}
+			}
+
+		}
+	}
+
+	.main__paginator {
+		clear: both;
 	}
 }
 
