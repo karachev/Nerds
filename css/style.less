@@ -334,12 +334,12 @@ main {
 			margin-right: 21px;
 			margin-bottom: 55px;
 			h2 {
+				margin-left: 18px;
 				color: black;
 				display: inline;
 				font-size: 18px;
 				font-weight: 700;
 				line-height: 18px;
-				margin-left: 18px;
 			}
 
 			ul {
@@ -401,6 +401,37 @@ main {
 
 	.main__paginator {
 		clear: both;
+		margin-bottom: 65px;
+		ul {
+			margin-left: 381px;
+			padding-top: 28px;
+			li {
+				display: inline-block;
+				list-style-type: none;
+				padding: 12px 17px;
+				background: #dbdbdb;
+				border: 3px solid #dbdbdb;
+				margin-right: 8px;
+				border-radius: 3px;
+				a {
+					color: black;
+					font-size: 16px;
+					font-weight: 500;
+					line-height: 18px;
+					text-transform: uppercase;
+					text-decoration: none;
+				}
+			}
+
+			li:last-child {
+				padding: 12px 74px;
+			}
+
+			.main__paginator_page-active {
+				background: #fff;
+				border: 3px solid #dbdbdb;
+			}
+		}
 	}
 }
 
