@@ -7,19 +7,6 @@ body {
   color: #000;
 }
 
-.min-price__input {
-	font-family: 'Roboto', 'Arial', sans-serif;
-				  font-size: 16px;
-				  width: 60px;
-				  margin-left: 10px;
-				  padding: 8px 10px;
-				  text-align: center;
-				  color: #283136;
-				  border: none;
-				  border-radius: 5px;
-				  background: #f1f1f1;
-}
-
 header {
 	margin-bottom: 424px;
 
@@ -86,6 +73,7 @@ header {
 	margin-bottom: 43px;
 	background-color: #eee;
 }
+
 
 main {
 	/*index.html*/
@@ -363,16 +351,17 @@ main {
 		}
 
 		.form__cost {
-
 			.range-filter {
-				width: 240px;
+				width: 258px;
+				margin-top: 48px;
+				margin-left: 1px;
 
 				.range-controls {
 					position: relative;
 				  height: 41px;
 				  padding-top: 39px;
-				  padding-right: 20px;
-				  padding-left: 20px;
+				  padding-right: 0px;
+				  padding-left: 0px;
 				  margin-bottom: 15px;
 				  border-radius: 5px;
 				  background: #f1f1f1;
@@ -391,7 +380,7 @@ main {
 					.toggle {
 						position: absolute;
 					  top: 30px;
-					  left: 0px;
+					  left: 18px;
 					  width: 4px;
 					  height: 4px;
 					  cursor: pointer;
@@ -402,13 +391,28 @@ main {
 					}
 
 					.toggle-min {
-  					left: 50px;
 					}
 
 					.toggle-max {
- 						left: 110px;
+ 						left: 160px;
 					}
 				}
+			}
+
+			.min-price__input {
+			  font-size: 16px;
+			  width: 60px;
+			  margin-left: 7px;
+			  padding: 8px 10px;
+			  text-align: center;
+			  color: #283136;
+			  border: none;
+			  border-radius: 5px;
+			  background: #f1f1f1;
+			}
+
+			.max-price {
+				margin-left: 28px;
 			}
 
 			.price-contols {
@@ -419,15 +423,11 @@ main {
 				  display: inline-block;
 				  width: 50%;
 				}
-
-				.max-price {
-					text-align: right;
-				}
 			}
 		}
 
 		.form__net {
-			margin-top: 234px;
+			margin-top: 57px;
 			ul {
 				padding: 0px;
 				li {
