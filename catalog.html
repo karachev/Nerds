@@ -30,27 +30,42 @@
 	<main>
 		<div class="container clearfix">
 			<div class="main__left">
-				<form action="">
+				<form action="form.php" method="get">
 					<section class="form__cost">
 						<h2>СТОИМОСТЬ:</h2>
 					<!-- Потом добавится -->
+
+						<div class="range-filter">
+        			<div class="range-controls">
+          			<div class="scale">
+            			<div class="bar" style="margin-left: 10%; width: 55%"></div>
+          			</div>
+          			<div class="toggle toggle-min"></div>
+          			<div class="toggle toggle-max"></div>
+        			</div>
+        			<div class="price-controls">
+          			<label class="min-price">ОТ <input class="min-price__input" name="min-price" type="text" value="0"></label>
+  			        <label class="max-price">ДО <input class="min-price__input" name="max-price" type="text" value="15000"></label>
+        			</div>
+      			</div>
+
 					</section>
 					<section class="form__net">
 						<h2>Сетка:</h2>
 						<ul>
-							<li><input type="text"><label>Адаптивная</label></li>
-							<li><input type="text"><label>Фиксированная</label></li>
-							<li><input type="text"><label>Резиновая</label></li>
+							<li><input type="radio"><label>Адаптивная</label></li>
+							<li><input type="radio"><label>Фиксированная</label></li>
+							<li><input type="radio"><label>Резиновая</label></li>
 						</ul>
 					</section>
 					<section class="form__difference">
 						<h2>ОСОБЕННОСТИ:</h2>
 						<ul>
-							<li><input type="text"><label>Слайдер</label></li>
-							<li><input type="text"><label>Блок преимуществ</label></li>
-							<li><input type="text"><label>Новости</label></li>
-							<li><input type="text"><label>Галерея</label></li>
-							<li><input type="text"><label>Корзина</label></li>
+							<li><input type="checkbox"><label>Слайдер</label></li>
+							<li><input type="checkbox"><label>Блок преимуществ</label></li>
+							<li><input type="checkbox"><label>Новости</label></li>
+							<li><input type="checkbox"><label>Галерея</label></li>
+							<li><input type="checkbox"><label>Корзина</label></li>
 						</ul>
 					</section>
 					<button class="btn btn__show" name="show" type="submit">Показать</button>

@@ -1,7 +1,23 @@
 body {
 	width: 1440px;
 	margin: 0px;
-	font-family: "Roboto", sans-serif;
+
+	font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+.min-price__input {
+	font-family: 'Roboto', 'Arial', sans-serif;
+				  font-size: 16px;
+				  width: 60px;
+				  margin-left: 10px;
+				  padding: 8px 10px;
+				  text-align: center;
+				  color: #283136;
+				  border: none;
+				  border-radius: 5px;
+				  background: #f1f1f1;
 }
 
 header {
@@ -323,11 +339,130 @@ main {
 	.main__left {
 		float: left;
 		width: 300px;
+		margin-left: 20px;
+
+		ul {
+			li {
+				list-style-type: none;
+			}
+		}
+
+		h2 {
+			color: black;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 30px;
+			text-transform: uppercase;
+		}
+
+		label {
+			color: #283136;
+			line-height: 20px;
+			font-size: 16px;
+			font-weight: 400;
+		}
+
+		.form__cost {
+
+			.range-filter {
+				width: 240px;
+
+				.range-controls {
+					position: relative;
+				  height: 41px;
+				  padding-top: 39px;
+				  padding-right: 20px;
+				  padding-left: 20px;
+				  margin-bottom: 15px;
+				  border-radius: 5px;
+				  background: #f1f1f1;
+
+					.scale {
+						height: 2px;
+  					background: #d7dcde;
+
+						.bar {
+							width: 70%;
+						  height: 2px;
+						  background: #00ca74;
+						}
+					}
+
+					.toggle {
+						position: absolute;
+					  top: 30px;
+					  left: 0px;
+					  width: 4px;
+					  height: 4px;
+					  cursor: pointer;
+					  border: 8px solid #fff;
+					  border-radius: 50%;
+					  background: #ababab;
+					  box-shadow: 0 2px 1px 0 #cfcfcf;
+					}
+
+					.toggle-min {
+  					left: 50px;
+					}
+
+					.toggle-max {
+ 						left: 110px;
+					}
+				}
+			}
+
+			.price-contols {
+				font-size: 0;
+
+				.min-price {
+					font-size: 16px;
+				  display: inline-block;
+				  width: 50%;
+				}
+
+				.max-price {
+					text-align: right;
+				}
+			}
+		}
+
+		.form__net {
+			margin-top: 234px;
+			ul {
+				padding: 0px;
+				li {
+
+				}
+			}
+		}
+
+		.form__difference {
+			margin-top: 82px;
+			ul {
+				padding: 0px;
+				li {
+
+				}
+			}
+		}
+
+		.btn__show {
+			margin-top: 109px;
+			padding: 16px 88px;
+			border: none;
+			background-color: #eee;
+			color: black;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 18px;
+			text-transform: uppercase;
+		}
 	}
 
 	.main__right {
 		float: right;
 		width: 800px;
+		margin-top: 2px;
 
 		.main__right_sort {
 			margin-top: 15px;
