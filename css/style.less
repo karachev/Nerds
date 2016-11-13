@@ -562,6 +562,14 @@ main {
 						text-transform: uppercase;
 						text-decoration: none;
 					}
+
+					a:hover {
+						opacity: 0.6;
+					}
+
+					a:active {
+						opacity: 1;
+					}
 				}
 			}
 
@@ -580,6 +588,22 @@ main {
 
 				.icon-down-dir {
 					background: url(../img/sort-up.png);
+				}
+
+				.icon-up-dir:active {
+					background: url(../img/sort-down.active.png);
+				}
+
+				.icon-down-dir:active {
+					background: url(../img/sort-up.active.png);
+				}
+
+				.icon-up-dir:hover {
+					background: url(../img/sort-down.hover.png);
+				}
+
+				.icon-down-dir:hover {
+					background: url(../img/sort-up.hover.png);
 				}
 			}
 		}
