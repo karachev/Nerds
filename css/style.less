@@ -361,7 +361,7 @@ main {
 				line-height: 18px;
 			}
 
-			button { /*ЕЩЕ подумать*/
+			.btn__feedback { /*ЕЩЕ подумать*/
 				display: block;
 				margin-top: 37px;
 
@@ -375,6 +375,16 @@ main {
 				padding: 16px 44px;
 				border-radius: 3px;
 				margin-bottom: 46px;
+			}
+
+			.btn__feedback:hover {
+				background-color: #e74246;
+			}
+
+			.btn__feedback:active {
+				color: #e48789;
+				background-color: #d7373b;
+				box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 			}
 		}
 	}
@@ -519,8 +529,7 @@ main {
 		}
 
 		.btn__show:active {
-			opacity: 0.3;
-			color: black;
+			color: #a9a9a9;
 			background-color: #d5d5d5;
 			box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 			outline: none;
@@ -663,8 +672,7 @@ main {
 			}
 
 			li:nth-child(n+1):active {
-				opacity: 0.3;
-				color: black;
+				color: #a9a9a9;
 				background-color: #d5d5d5;
 				box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 			}
