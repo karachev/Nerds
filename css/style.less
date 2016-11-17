@@ -776,17 +776,61 @@ main {
 		}
 
 		.form__difference {
-			margin-top: 82px;
+			margin-top: 45px;
 			ul {
 				padding: 0px;
+				margin-top: -20px;
+				display: inline-block;
 				li {
+					input[type=checkbox] {
+						display: none;
+					}
 
+					label {
+						display: block;
+						position: relative;
+						line-height: 20px;
+						cursor: pointer;
+						margin: 20px 0;
+						padding-left: 36px;
+					}
+
+					input[type=checkbox] + label:before {
+						content: "";
+						display: block;
+						position: absolute;
+						top: -2px;
+						left: 0px;
+						width: 18px;
+						height: 18px;
+						border: 2px solid #c1c1c1;
+						border-radius: 4px;
+					}
+
+					input[type=checkbox] + label:hover:before {
+						border: 2px solid #4d4d4d;
+					}
+
+					input[type=checkbox]:checked + label:after {
+						content: "";
+						display: block;
+						position: absolute;
+						top: -3px;
+						left: 0px;
+						width: 27px;
+						height: 23px;
+						background: url(../img/checkbox-on.png);
+					}
+
+					input[type=checkbox]:checked + label:hover:after {
+						background: url(../img/checkbox-on-hover.png);
+					}
 				}
 			}
 		}
 
 		.btn__show {
-			margin-top: 109px;
+			margin-top: 14px;
 			padding: 16px 88px;
 			border: none;
 			font-family: "Roboto", sans-serif;
